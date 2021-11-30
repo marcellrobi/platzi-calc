@@ -1,0 +1,116 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content__title {
+  font-size: 3rem;
+  margin-block-end: 50px;
+}
+
+.button_container {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.button {
+  width: 150px;
+  height: 150px;
+  color: #F0A500;
+  border: none;
+  background-color: #fcfcfc;
+  font-size: 10rem;
+}
+.button .fa-play {
+  display: inline-block;
+  transform: rotate(-100grad);
+}
+.button i:hover {
+  color: #000000;
+}
+
+.calc {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin-block-start: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+  border-radius: 30px;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.6);
+  color: #fcfcfc;
+}
+.calc h2 {
+  color: #000000;
+  position: absolute;
+  inset-block-start: -50px;
+  font-size: 2rem;
+  text-align: center;
+}
+.calc form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+.calc form label {
+  font-size: 1.7rem;
+  margin-block-end: 20px;
+  text-align: center;
+}
+.calc form input {
+  height: 30px;
+  padding-inline-start: 5px;
+  border: none;
+  border-bottom: 2px solid #F0A500;
+  background-color: #000000;
+  color: #fcfcfc;
+}
+.calc form button {
+  width: 150px;
+  height: 30px;
+  margin-block-start: 15px;
+  font-size: 1.5rem;
+  background-color: #F0A500;
+  border: none;
+  color: #000000;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+.calc form button:hover {
+  background-color: #fcfcfc;
+  color: #000000;
+}
+
+.triangulo {
+  height: 300px;
+  width: 400px;
+}
+.triangulo input {
+  margin-block-start: 10px;
+}
+.triangulo input::placeholder {
+  color: #fcfcfc;
+  font-size: 1.5rem;
+}
+.triangulo div {
+  width: 85%;
+  margin-block-start: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.triangulo, .cuadrado, .circulo {
+  display: none;
+}
+
+/*# sourceMappingURL=geometria.css.map */

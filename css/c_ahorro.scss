@@ -1,0 +1,68 @@
+$fuente1: 'Anton', sans-serif;
+$fuente2: 'Roboto', sans-serif;
+$color_blanco: #fcfcfc;
+$color_negro: #000000;
+$color_oscuro: #1d3b55;
+$color_claro: #334756;
+$color_terciario:#F0A500;
+
+@mixin caja {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  @include caja;
+}
+h1 {
+  color: $color_terciario;
+  font-size: 4.0rem;
+  margin-block-end: 30px;
+}
+.main__section {
+  width: 450px;
+  height: 80%;
+  background-color: $color_terciario;
+  border-radius: 20px;
+  @include caja;
+  .main__parrafo1 {
+    color: $color_blanco;
+    font-size: 2.0rem;
+    margin: 20px;
+  }
+  form {
+    width: 100%;
+    height: 75%;
+    @include caja;
+    justify-content: space-between;
+    input {
+      height: 25px;
+      width: 65%;
+      padding: 0 0 5px 5px;
+      background: none;
+      border: none;
+      border-bottom: 2px solid #222831 ;
+      margin-block-end: 20px;
+      color: $color_blanco;
+      outline: none;
+      font-family: 1.8rem;
+      &::placeholder {
+        font-family: $fuente2;
+        font-size: 1.8rem;
+        color: $color_blanco;
+      }
+    }
+    button {
+      width: 150px;
+      height: 50px;
+      font-size: 1.8rem;
+      color: $color_blanco;
+      border: none;
+      border-radius: 50px;
+      background-color: #222831;
+    }
+    
+  }
+}

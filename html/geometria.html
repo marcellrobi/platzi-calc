@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://kit.fontawesome.com/ca5828fd6e.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../css/geometria.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__title">
+      <div></div>
+      <p>marcellrobi.PlaziProject</p>
+    </div>
+    <div class="header__menu">
+      <ul>
+        <li> <a href="./index.html">Inicio</a> </li>
+        <li> <a>Contacto</a> </li>
+        <li> <a>Menu</a> </li>
+      </ul>
+    </div>
+  </header>
+  <main class="main">
+    <section class="content">
+      <h2 class="content__title">Selecciona una figura</h2>
+      <div class="button_container">
+        <button type="button" onclick="squareButton()" class="square button" id="square_button">
+          <i class="fas fa-square"></i>
+        </button>
+        <button type="button" onclick="triangleButton()" class="triangle button">
+          <i class="fas fa-play"></i>
+        </button>
+        <button type="button" onclick="circleButton()" class="circle button">
+          <i class="fas fa-circle"></i>
+        </button>
+      </div>
+      <div class="cuadrado calc" id="cuadrado">
+        <h2>Calcula el area y perimetro de un cuadrado</h2>
+        <form action="">
+          <label for="InputCuadrado">¿Cuanto miden los lados de tu cuadrado?</label>
+          <input type="number" id="InputCuadrado">
+          <button type="button" onclick="calcularPerimetroCuadrado()">Calcular el Perimetro</button>
+          <button type="button" onclick="calcularAreaCuadrado()">Calcular el Area</button>
+        </form>
+        <p class="resultado_cuadrado" id="resultado_cuadrado"></p>
+      </div>
+      <div class="triangulo calc" id="triangulo">
+        <h2>Calcula el area y el perimetro de un Triangulo</h2>
+        <form action="">
+          <input type="number" id="InputLado1" placeholder="¿Lado 1?">
+          <input type="number" id="InputLado2" placeholder="¿Lado2?">
+          <input type="number" id="InputBase" placeholder="¿Base?">
+          <div>
+            <button type="button" onclick="calcularPerimetroTriangulo()">Calcular el Perimetro</button>
+            <button type="button" onclick="calcularAreaTriangulo()">Calcular el Area</button>
+          </div>
+        </form>
+        <p class="resultado_triangulo" id="resultado_triangulo"></p>
+      </div>
+      <div class="circulo calc" id="circulo">
+        <h2>Calcula el area, perimetro y diametro de un Circunferencia</h2>
+        <form action="">
+          <input type="number" id="radio" placeholder="¿Radio cm?">
+          <div>
+            <button type="button" onclick="perimetroCirculo()">Calcular el Perimetro</button>
+            <button type="button" onclick="areaCirculo()">Calcular el Area</button>
+          </div>
+        </form>
+        <p class="resultado_circunferencia" id="resultado_circunferencia"></p>
+      </div>
+    </section>
+    <section class="options">
+      <a href="./c_ahorro.html">
+      <div class="options_card">
+        <div>
+          <i class="fas fa-balance-scale-right"></i>
+          <h3>Capacidad de Ahorro</h3>
+        </div>
+        <p>Calcula tu capacidad de ahorro mensual</p>
+      </div>
+      </a>
+      <a href="../JavaScript/geometria.js">
+      <div class="options_card">
+        <div>
+          <i class="fas fa-square-root-alt"></i>
+          <h3>Geometria</h3>
+        </div>
+        <p>Calcula el area, perimetro, altura y diametro de las figuras geométricas</p>
+      </div>
+      </a>
+      <a href="./estadistica.html">
+      <div class="options_card">
+        <div>
+          <i class="fas fa-calculator"></i>
+          <h3>Estadistica</h3>
+        </div>
+        <p>Calcula La mediana, la moda y la media</p>
+      </div>
+      </a>
+    </section>
+    </main>
+    <footer class="footer">
+      <p>Made by <a href="">marcellrobi <i class="fab fa-github"></i></a></p>
+    </footer>
+  </section>
+  <script src="../JavaScript/geometria.js"></script>
+</body>
+</html>

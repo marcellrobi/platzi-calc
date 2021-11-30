@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Porcentajes y Descuentos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/descuentos.css">
+</head>
+<body>
+  <header>
+    <h1>Porcentajes y descuentos</h1>
+    <p>Segundo taller del curso practico de JS</p>
+  </header>
+  <main>
+    <section>
+      <h2>Calcular el precio de tus productos con descuento</h2>
+      <form action="">
+        <label>Calcula el precio de tu producto</label>
+        <input type="number" placeholder="Precio" id="InputPrice">
+        <input type="number" placeholder="% de descuento" id="InputDiscount">
+        <input list="cupones" type="text" placeholder="% del Cupon" id="InputCupon">
+        <datalist id="cupones">
+          <option value="robi_developer"></option>
+          <option value="web_robi"></option>
+          <option value="master_robi"></option>
+        </datalist>
+        <button type="button" onclick="onClickButtonPriceDiscount()">Calcular</button>
+        <p id="ResultP"></p>
+      </form>
+    </section>
+    <script src="./descuentos.js"> </script>
+  </main>
+</body>
+</html>

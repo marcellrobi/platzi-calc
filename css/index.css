@@ -1,0 +1,173 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+  background: #fcfcfc;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+.header {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10%;
+  background-color: #000000;
+}
+.header__title {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 500px;
+}
+.header__title div {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #F0A500;
+}
+.header__title p {
+  color: #fcfcfc;
+  font-size: 2.5rem;
+  margin-inline-start: 10px;
+}
+.header__menu {
+  width: 500px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.header__menu ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.header__menu ul li {
+  list-style: none;
+  width: 33%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.header__menu ul li a {
+  text-decoration: none;
+  color: #fcfcfc;
+  font-size: 2rem;
+}
+.header__menu ul li:hover {
+  background-color: #F0A500;
+}
+.header__menu ul li:hover a {
+  color: #000000;
+}
+
+.main {
+  height: 85%;
+  width: 100%;
+  display: flex;
+}
+.main .content {
+  width: 60%;
+  height: 100%;
+  padding: 50px;
+  padding-block-start: 15px;
+}
+.main .content .image_container {
+  width: 500px;
+  height: 400px;
+}
+.main .content .image_container img {
+  width: 100%;
+  height: 100%;
+}
+.main .content .text_container {
+  padding-inline-start: 60px;
+}
+.main .content .text_container h2 {
+  font-size: 4rem;
+  color: #F0A500;
+}
+.main .content .text_container p {
+  color: #334756;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.main .content .text_container p:last-child {
+  font-size: 1.5rem;
+}
+.main .options {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #F0A500;
+}
+.main .options a {
+  width: 75%;
+  height: 150px;
+  padding: 50px;
+  border-radius: 30px;
+  background: #F0A500;
+  box-shadow: -10px -10px 30px #cc8c00, 10px 10px 30px #ffbe00;
+  color: #000000;
+  text-decoration: none;
+}
+.main .options a .options_card {
+  width: 100%;
+  height: 100%;
+}
+.main .options a .options_card div {
+  display: flex;
+}
+.main .options a .options_card div i {
+  font-size: 2rem;
+  margin: 0 10px 10px 0;
+}
+.main .options a .options_card div h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.main .options a .options_card p {
+  font-size: 1.5rem;
+}
+.main .options a:hover {
+  background-color: #000000;
+  color: #fcfcfc;
+  box-shadow: 0 -30px -30px 0 rgba(252, 252, 252, 0.6);
+}
+
+.footer {
+  width: 100%;
+  height: 5%;
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footer p {
+  font-size: 1.7rem;
+  color: #fcfcfc;
+  font-weight: bold;
+}
+.footer p a {
+  color: #F0A500;
+}
+
+/*# sourceMappingURL=index.css.map */

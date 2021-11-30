@@ -1,0 +1,130 @@
+$fuente1: 'Anton', sans-serif;
+$fuente2: 'Roboto', sans-serif;
+$color_blanco: #fcfcfc;
+$color_negro: #000000;
+$color_oscuro: #1d3b55;
+$color_claro: #334756;
+$color_terciario:#F0A500;
+
+@mixin caja {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+.content__title{
+  font-size: 3.0rem;
+  margin-block-end: 50px;
+}
+.button_container {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.button{
+  width: 150px;
+  height: 150px;
+  color: $color_terciario;
+  border: none;
+  background-color: $color_blanco;
+  font-size: 10.0rem;
+  .fa-play{
+    display: inline-block;
+    transform: rotate(-100grad);
+  }
+  i:hover {
+    color: $color_negro;
+  }
+}
+
+.calc {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin-block-start: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: $color_negro;
+  border-radius: 30px;
+  box-shadow: 0 10px 10px 0 rgba($color: #000000, $alpha: 0.6);
+  color: $color_blanco;
+  h2 {
+    color: $color_negro;
+    position: absolute;
+    inset-block-start: -50px;
+    font-size: 2.0rem;
+    text-align: center;
+  }
+  form{
+    @include caja;
+    flex-direction: column;
+    width: 100%;
+    label{
+      font-size: 1.7rem;
+      margin-block-end: 20px;
+      text-align: center
+    }
+    input {
+      height: 30px;
+      padding-inline-start: 5px;
+      border: none;
+      border-bottom: 2px solid $color_terciario;
+      background-color: $color_negro;
+      color: $color_blanco;      
+    }
+    button{
+      width: 150px;
+      height: 30px;
+      margin-block-start: 15px;
+      font-size: 1.5rem;
+      background-color: $color_terciario;
+      border: none;
+      color: $color_negro;
+      font-family: $fuente2;
+      font-weight: bold;
+      &:hover{
+        background-color: $color_blanco;
+        color: $color_negro;
+      }
+
+    }
+  }
+}
+.triangulo {
+  height: 300px;
+  width: 400px;
+  input{
+    margin-block-start: 10px;
+    &::placeholder {
+      color: $color_blanco;
+      font-size: 1.5rem;
+    }
+  }
+  div{
+    width: 85%;
+    margin-block-start: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.circulo {
+  div {
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+  }
+}
+
+.triangulo, .cuadrado, .circulo{
+  display: none;  
+}
